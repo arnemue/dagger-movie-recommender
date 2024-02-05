@@ -13,8 +13,6 @@ dependencies = [
   "pyarrow >= 15.0.0",
 ]
 
-[tool.setuptools]
-packages = ["topn"]
 
 [project.optional-dependencies]
 test = [
