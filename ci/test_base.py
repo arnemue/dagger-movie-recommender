@@ -20,7 +20,7 @@ async def test():
             # install package and test dependencies
             .with_exec(["pip", "install", "-r", "requirements.txt"])
             .with_exec(["pip", "install", ".[test]"])
-            .with_exec(["pytest", "tests"])
+            .with_exec(["pytest", "-v", "tests"])
         )
 
         print("Starting tests for Python")
