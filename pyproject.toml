@@ -8,8 +8,9 @@ version = "0.0.1"
 description = "TopN Recommender System"
 authors= []
 dependencies = [
-  "pandas < 2.0.0",
+  "pandas >= 2.2.0",
   "scikit-learn >= 1.4.0",
+  "pyarrow >= 15.0.0",
 ]
 
 [tool.setuptools]
