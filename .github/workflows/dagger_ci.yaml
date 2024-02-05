@@ -17,4 +17,4 @@ jobs:
       - name: Install Dagger CLI
         run: cd /usr/local && { curl -L https://dl.dagger.io/dagger/install.sh | sh; cd -; }
       - name: Run Dagger pipeline
-        run: dagger run python ci/test_base.py
+        run: dagger run --focus python ci/test_base.py

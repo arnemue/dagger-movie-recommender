@@ -14,5 +14,5 @@ jobs:
           python-version: '3.11'
       - name: Install deps
         run: pip install ".[test]"
-      - name: Run Dagger pipeline
+      - name: Run tests
         run: pytest tests
