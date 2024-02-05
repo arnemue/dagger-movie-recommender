@@ -12,7 +12,7 @@ async def test():
         python = (
             client.container()
             # pull container
-            .from_("python:3.10-slim-bullseye")
+            .from_("python:3.11-slim-bullseye")
             # mount source directory
             .with_directory("/ws", src)
             # change working directory
