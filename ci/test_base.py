@@ -18,6 +18,7 @@ async def test():
             # change working directory
             .with_workdir("/ws")
             # install package and test dependencies
+            .with_exec(["pip", "install", "-r", "requirements.txt"])
             .with_exec(["pip", "install", ".[test]"])
             .with_exec(["pytest", "tests"])
         )
