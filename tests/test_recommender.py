@@ -1,24 +1,6 @@
 # Unit tests for preprocessing functions
-import pytest
-import pandas as pd
 
 from topn.model.recommender import RecommenderSystem
-
-
-@pytest.fixture
-def mock_data():
-    data = pd.DataFrame({
-        'userId': [1, 1, 2, 2, 3],
-        'movieId': [101, 102, 101, 103, 102],
-        'rating': [5, 4, 3, 2, 1]
-    })
-    return data
-
-# Loading mock data for testing
-@pytest.fixture
-def sample_data():
-    data = pd.read_csv("tests/resources/processed_ratings.csv")
-    return data
 
 
 # Integration test for RecommenderSystem with mock data
